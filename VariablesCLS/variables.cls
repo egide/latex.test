@@ -7,8 +7,9 @@
 \RequirePackage{hyperref}%										Gestion des pdf
 \RequirePackage[frenchb]{babel}%								Le document est en français
 \newcommand*{\@titre}{Document sans titre}%				Création de la variable et contenu par défaut
-\newcommand*{\titre}[1]{\renewcommand*{\@titre}{#1}}%	Redéfinition de la variable
+\newcommand*{\titre}[1]{\renewcommand*{\@titre}{#1}\hypersetup{pdftitle={\@titre}}}
+\newcommand*{\@auteur}{Anonyme}%
+\newcommand*{\auteur}[1]{\renewcommand*{\@auteur}{#1}\hypersetup{pdfauthor={\@auteur}}}%
 \pagestyle{scrheadings}%										Utilisation des déco de pages perso
 \chead[]{\@titre}%												Utilisation de la variable dans l'entete
-\hypersetup{pdftitle={\expandafter\@titre}}%				Utilisation de la variable qui ne fonctionne pas
 
