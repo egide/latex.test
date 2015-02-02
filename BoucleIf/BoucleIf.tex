@@ -1,12 +1,12 @@
 \documentclass{scrartcl}
 \usepackage[utf8]{inputenc}\usepackage[T1]{fontenc}
 \usepackage[frenchb]{babel}
-\newcommand*\mynew[2][un]{ >#1< et >#2<}
+\newcommand*\mynew[2][\null]{ >#1< et >#2<}
 \begin{document}
 Du texte pour voir
 
 --- \mynew{un}
 
---- \mynew[deux]{un}
+--- \mynew[un]{deux}
 
 \end{document}
