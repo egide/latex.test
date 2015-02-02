@@ -1,7 +1,13 @@
 \documentclass{scrartcl}
 \usepackage[utf8]{inputenc}\usepackage[T1]{fontenc}
 \usepackage[frenchb]{babel}
-\newcommand*\mynew[2][\null]{ >#1< et >#2<}
+\newcommand*\mynew[2][\null]{%
+\ifx#1\null%
+>#2< et >#2<%
+\else%
+>#1< et >#2<%
+\fi%
+}
 \begin{document}
 Du texte pour voir
 
