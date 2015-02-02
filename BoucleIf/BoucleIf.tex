@@ -1,7 +1,12 @@
 \documentclass{scrartcl}
 \usepackage[utf8]{inputenc}\usepackage[T1]{fontenc}
 \usepackage[frenchb]{babel}
-\usepackage{blindtext}
+\newcommand*\mynew[2][un]{ >#1< et >#2<}
 \begin{document}
-\blinddocument
+Du texte pour voir
+
+--- \mynew{un}
+
+--- \mynew[deux]{un}
+
 \end{document}
