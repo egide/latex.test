@@ -19,7 +19,10 @@
 	Cependant, la chose ne me semble pas possible, étant donné que l'on ne peut pas mettre de saut de paragraphe},
 	sort={ete},
 	plural={étés}}
-
+\newacronym[plural={mdrs},
+	first={mort de rire (mdr)},
+	firstplural={mortde rire (mdr)}]
+	{lol}{mdr}{On se bidonne}
 \begin{document}
 
 %% Exemple tirée de:
@@ -31,8 +34,12 @@
 %	sort={<terme>}, % si le mot contient des caractère spéciaux, ils ne seront pas pris en compte
 %	plural={<termes>} % la forme plurielle du terme
 %}
+% utilisation: \gls \Gls \glspl \Glspl
 
+C'est vraiment comique, \gls{lol}.
 C'est l'\gls{ete}\dots C'est le \Gls{printemp}\dots Les \glspl{automne} sont pleins de couleurs!
+J'en suis vraiment \gls{lol}\dots
+
 
 \printglossary
 
