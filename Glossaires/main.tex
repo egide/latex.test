@@ -4,10 +4,28 @@
 \usepackage{glossaries}
 \makeglossaries
 \usepackage{babel}
+\newglossaryentry{printemp}
+{%
+	name={printemp},
+	description={Période des amours et des petites fleurs},
+	sort={printemp},
+	plural={printemps}
+}
+\newglossaryentry{automne}
+{%
+	name={automne},
+	description={Période très difficile à supporter à cause de la chaleur intense qu'il y fait},
+	sort={automne},
+	plural={automnes}
+}
 \newglossaryentry{ete}
 {%
 	name={été},
-	description={Période très difficile à supporter à cause de la chaleur intense qu'il y fait},
+	description={Période très difficile à supporter à cause de la chaleur intense qu'il y fait.
+	Avec une phrase très longue qui ne veur rien dire du tout, mais qui semble cependant fort utile
+	pour évaluer la manière avec laquelle latex va mettre ceci en forme.\\
+	Je voudrais effectivement pouvoir mettre des texte assez long, de vraies définitions, avec, pourquoi pas, des citations dans le texte.
+	Cependant, la chose ne me semble pas possible, étant donné que l'on ne peut pas mettre de saut de paragraphe},
 	sort={ete},
 	plural={étés}
 }
@@ -28,6 +46,10 @@ Du texte juste pour voir ce que cela donne avec des accents...
 
 
 C'est l'\gls{ete}\dots
+
+C'est le \Gls{printemp}\dots
+
+Les \glspl{automne} sont pleins de couleurs!
 
 \printglossary
 
