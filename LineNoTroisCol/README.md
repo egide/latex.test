@@ -17,7 +17,7 @@ produise. Ce doit être un problème de limite de nombre de boucle que LaTeX a l
 droit de faire.
 
 L'erreur est:
-'''
+```
 $ ! Output loop---200 consecutive dead cycles.
-'''
+```
 
