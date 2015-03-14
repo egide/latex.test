@@ -1,0 +1,23 @@
+\documentclass[frenchb,pdftex]{scrartcl}
+\usepackage[utf8]{inputenc}\usepackage[T1]{fontenc}
+\usepackage{lipsum,eledmac,multicol,babel}
+\setlength{\columnsep}{14pt}%
+\usepackage[includehead,includefoot,top=1cm,bottom=1cm,
+	inner=2cm,outer=1cm,footskip=1cm,pdftex]{geometry}
+\setlength{\linenumsep}{1pt}
+\makeatletter
+\firstlinenum{1}
+\linenumincrement{2}
+\def\numlabfont{\normalfont\tiny\sffamily}
+%On est obligé de surchargé car le \textsuperscript directement dans numlabfont ne passe pas (je ne sais pas encore pq)
+\renewcommand*{\ledlinenum}{\numlabfont\textsuperscript{\linenumrep{\line@num}}}
+\makeatother
+
+\begin{document}
+\begin{multicols}{4}
+	\beginnumbering
+	\autopar
+	\lipsum
+	\endnumbering
+\end{multicols}
+\end{document}
