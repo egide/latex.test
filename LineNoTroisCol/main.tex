@@ -1,4 +1,5 @@
 \documentclass[frenchb,pdftex]{scrartcl}
+\maxdeadcycles 300
 \usepackage[utf8]{inputenc}\usepackage[T1]{fontenc}
 \usepackage{lipsum,lineno,multicol,babel}
 \linenumbers\setlength{\linenumbersep}{1pt}%
@@ -6,11 +7,11 @@
 \setlength{\columnsep}{14pt}%
 \usepackage[includehead,includefoot,top=1cm,bottom=1cm,
 	inner=2cm,outer=1cm,footskip=1cm,pdftex]{geometry}
-\begin{document}
-\begin{multicols}{4}
 	\setpagewiselinenumbers%
 	\modulolinenumbers[2]%
 	\firstlinenumber{1}%
+\begin{document}
+\begin{multicols}{4}
 	\lipsum
-\end{multicols}%
+\end{multicols}
 \end{document}
